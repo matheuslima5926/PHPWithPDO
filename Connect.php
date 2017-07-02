@@ -1,6 +1,6 @@
 <?php
 
-//sempre programe para uma interface
+//Interface
 require_once 'IConnect.php';
  class Connect implements IConnect
 {
