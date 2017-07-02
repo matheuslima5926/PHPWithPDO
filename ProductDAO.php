@@ -33,10 +33,4 @@ class ProductDAO
         $stmt->execute();
         return $this->db->lastInsertId();
     }
-    public function update()
-    {
-    }
-    public function delete()
-    {
-    }
 }
