@@ -17,13 +17,16 @@ require_once 'IConnect.php';
      }
      public function connect()
      {
-         try{
+         try
+         {
              return new \PDO(
                  "mysql:host={$this->host};dbname={$this->dbname}",
                  $this->user,
                  $this->pass
-             );
-         }catch(\PDOException $e){
+                 );
+         }
+         catch(\PDOException $e)
+         {
              echo "Error! Message:".$e->getMessage()." Code:".$e->getCode();
              exit;
          }
